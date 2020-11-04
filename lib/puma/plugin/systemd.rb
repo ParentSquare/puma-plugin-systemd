@@ -218,7 +218,7 @@ Puma::Plugin.create do
   end
 
   def fetch_stats
-    JSON.parse(@launcher.stats)
+    JSON.parse(@launcher.stats.to_json)
   end
 
   def status
