@@ -161,12 +161,6 @@ Puma::Plugin.create do
     end
   end
 
-  # Puma creates the plugin when encountering `plugin` in the config.
-  def initialize(loader)
-    # This is a Puma::PluginLoader
-    @loader = loader
-  end
-
   # We can start doing something when we have a launcher:
   def start(launcher)
     @launcher = launcher
